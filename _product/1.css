@@ -1,0 +1,18 @@
+button{
+    border: none;
+    padding: 16px 32px;
+    font-size: 20px;
+    color: snow;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.warna{background-color: coral;}
+.warna1{background-color: aqua;}
+.warna2{background-color: blueviolet;}
+
+button:hover{
+    background-color: darkgrey;
+}
+
+h1{color: aqua;}
