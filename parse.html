@@ -1,0 +1,34 @@
+<center>
+<b><span style="font-family: Courier New, Courier, monospace;">
+</span><div class="style1">
+<span style="font-family: Courier New, Courier, monospace;">Masukkan Script Kode HTML kedalam Kotak dibawah ini Kemudian klik "<span style="color: red;">Convert</span>"<i>&nbsp;</i></span></div>
+</b></center>
+<center>
+<b>
+<div style="text-align: center; width: 100%;">
+<div style="margin: 0 auto; padding: 0; width: 100%;">
+<div id="mainDiv" style="padding: 2px 0;">
+<textarea cols="21" id="tarea" onfocus="code_check();" rows="10" style="font-size: 12px; height: 80%; width: 80%;"></textarea>
+
+<br />
+<div style="margin: 0 auto; padding: 5px 0; width: 95%;">
+<button onclick="code_convert();" style="margin-right: 5px;" type="button">Convert</button>
+<button onclick="code_clear();" style="margin-left: 5px;" type="button">Clear</button> </div>
+</div>
+</div>
+</div>
+<script>
+function code_check(){
+var focuscheck=document.getElementById('tarea');if(focuscheck.value.indexOf('Pastekan Disini Kode yang Akan Anda Pasang pada Postingan Blog')>0)focuscheck.value='';}
+function code_clear(){
+var wtarea=document.getElementById('tarea');wtarea.value='';}
+function code_convert(){
+var ctarea=document.getElementById('tarea');var toConvert=ctarea.value;
+var toConvert=toConvert.replace(/&/g,"&amp;");
+var toConvert=toConvert.replace(/'/g,"&#039;");
+var toConvert=toConvert.replace(/"/g,"&quot;");
+var toConvert=toConvert.replace(/</g,"&lt;");
+var toConvert=toConvert.replace(/>/g,"&gt;");
+ctarea.value=toConvert;ctarea.focus();ctarea.select();};
+</script>
+</b></center>
